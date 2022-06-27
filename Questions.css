@@ -3,6 +3,16 @@ body{
     margin-left:auto;
     margin-right:auto;
     text-align: center;
-    background-color: rgb(255, 213, 213);
+    background-color: rgb(255, 255, 255);
 }
 
+#tutorial {
+    line-height: 2;
+    width: 40%;
+    padding: 25px 0;
+    text-align: center;
+    background-color: rgb(108, 114, 116);
+    margin-top: 5px;
+    margin-left:auto;
+    margin-right:auto;
+}

@@ -41,6 +41,33 @@
                 { q: "Disney XD had the best tv shows", a: "t" }
             ];
         
+            document.getElementById("question").innerHTML = array[count].q;
+        
+            
+            document.onkeyup   = function (event) {
+                var input = event.key;
+                if(input == "t" || input == "f"){
+                    if (array[count].a == input) {
+                        alert("You got it right!");
+                        score++;
+                        document.getElementById("score").innerHTML = "Score: " + score;
+                    }
+                    else{
+                        alert("That is incorect My freind");
+                    }
+                    count++;
+                    if(count < 10){
+                        document.getElementById("question").innerHTML = array[count].q;
+                    }
+                    else{
+                        alert("end of game, and yes a hot dog is a taco. I don't care what you say.");
+                    }
+                }
+                else{
+                    alert("Please Press either T or F on your keybord");
+                }
+            }
+
     </script>
 </body>
 </html>
